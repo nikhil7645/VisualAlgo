@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer: Sorting and Dijkstra's Algorithm</title>
+    <link rel="stylesheet" href="/visualalgo/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visualizer: <span>Sorting Visualizer</span></h1>
+        <a href="/djk.html" class="link">Path Finding Visualization</a>
+    </header>
+
+    <main>
+        <!-- Sorting Visualizer -->
+        <section class="visualizer" id="sorting-visualizer">
+            <!-- <h2>Sorting Visualizer</h2> -->
+            <div class="controls">
+                <label for="array-size">Array Size: </label>
+                <input type="number" id="array-size" value="10" min="5" max="100">
+                <button onclick="generateArray()">Generate Array</button>
+                <label for="speed">Speed: </label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+                <span id="speed-label">5x</span>
+                <button class = "but" onclick="startSorting('bubble')">Bubble Sort</button>
+                <button class = "but" onclick="startSorting('quick')">Quick Sort</button>
+                <button class = "but" onclick="startSorting('merge')">Merge Sort</button>
+                <button class = "but" onclick="startSorting('insertion')">Insertion Sort</button>
+                <button class = "but" onclick="startSorting('selection')">Selection Sort</button>
+                <button class = "but" onclick="startSorting('radix')">Radix Sort</button>
+            </div>
+            <div class="bar-container" id="bar-container"></div>
+        </section>
+
+       
+    </main>
+
+    <script src="/visualalgo/script.js"></script>
+</body>
+</html>
